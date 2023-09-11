@@ -2,7 +2,7 @@ import openai
 import requests
 import json
 from my_python_file import api_key
-def maveli(text):
+def maveli(text,api_key):
     
     if(api_key==''):
         return "Input API key"
