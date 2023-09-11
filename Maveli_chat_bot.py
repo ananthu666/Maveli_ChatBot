@@ -4,15 +4,12 @@ from streamlit.components.v1 import html
 from chat import chater
 
 api_key=st.secrets["api_key"]
-file_name = "my_python_file.py"
 
-with open(file_name, "w") as file:
-     file.write(f'api_key = "{api_key}"')
 
 def on_input_change():
     user_input = st.session_state.user_input
     st.session_state.past.append(user_input)
-    bot_response = chater(user_input)
+    bot_response = chater(user_input,api_key)
     st.session_state.generated.append({'type': 'normal', 'data': bot_response})
     st.session_state.user_input = ""
 
