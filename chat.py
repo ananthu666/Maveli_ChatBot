@@ -8,7 +8,7 @@ from ai_support import maveli
 nlp = spacy.load("en_core_web_sm")
 
 
-def analyze_message(message,api_key):
+def analyze_message(message):
     message_prev = message
     csv_file='onam.csv'
     conversation = []
@@ -58,8 +58,8 @@ def analyze_message(message,api_key):
             return msg
     
 
-def chater(user_text,api_key):
+def chater(user_text):
         user_input = user_text
-        response = analyze_message(user_input,api_key)
+        response = analyze_message(user_input)
         return response
 
