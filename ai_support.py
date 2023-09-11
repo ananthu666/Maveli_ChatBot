@@ -1,6 +1,7 @@
 import openai
 import requests
 import json
+import os
 
 def maveli(text):
     api_key=os.getenv('api_key')
