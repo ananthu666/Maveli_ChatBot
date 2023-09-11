@@ -3,7 +3,11 @@ from streamlit_chat import message
 from streamlit.components.v1 import html
 from chat import chater
 
+import nltk
 
+# Download the stopwords and Punkt tokenizer data
+nltk.download('stopwords')
+nltk.download('punkt')
 
 def on_input_change():
     user_input = st.session_state.user_input
