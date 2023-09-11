@@ -3,13 +3,12 @@ from streamlit_chat import message
 from streamlit.components.v1 import html
 from chat import chater
 
-api_key=st.secrets["api_key"]
 
 
 def on_input_change():
     user_input = st.session_state.user_input
     st.session_state.past.append(user_input)
-    bot_response = chater(user_input,api_key)
+    bot_response = chater(user_input)
     st.session_state.generated.append({'type': 'normal', 'data': bot_response})
     st.session_state.user_input = ""
 
