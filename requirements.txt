@@ -6,4 +6,4 @@ spacy==3.6.1
 streamlit-chat==0.1.1
 json5==0.9.11
 en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.6.0/en_core_web_sm-3.6.0-py3-none-any.whl#sha256=83276fc78a70045627144786b52e1f2728ad5e29e5e43916ec37ea9c26a11212
-python-dotenv==1.0.0
+dotenv==1.0.0
