@@ -8,7 +8,7 @@ from ai_support import maveli
 nlp = spacy.load("en_core_web_sm")
 
 
-def analyze_message(message):
+def analyze_message(message,api_key):
     message_prev = message
     csv_file='onam.csv'
     conversation = []
@@ -49,7 +49,7 @@ def analyze_message(message):
     if best_match and (best_word_count/ranger)>=0.75:
         return best_row['Answer']
     else:
-        msg=maveli(message_prev)
+        msg=maveli(message_prev,api_key)
         new_row = {'Question': message_prev, 'Answer': msg}
         with open(csv_file, 'a', newline='') as csvfile:
             fieldnames = ['Question', 'Answer']
@@ -58,8 +58,8 @@ def analyze_message(message):
             return msg
     
 
-def chater(user_text):
+def chater(user_text,api_key):
         user_input = user_text
-        response = analyze_message(user_input)
+        response = analyze_message(user_input,api_key)
         return response
 
