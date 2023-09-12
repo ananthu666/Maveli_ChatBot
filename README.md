@@ -2,14 +2,13 @@
 
 ![Maveli Chat Bot Logo](https://your-image-url-here.com)
 
-> Briefly describe your chatbot and its purpose.
 
 ## Table of Contents
 
 - [Features](#features)
 - [Getting Started](#getting-started)
-  - [Prerequisites And Installation](#prerequisites-and-nstallation)
-- [Working](#Working)
+  - [Prerequisites And Installation](#prerequisites-and-installation)
+- [Working](#working)
 - [How to Run](#how-to-run)
 
 ## Features
