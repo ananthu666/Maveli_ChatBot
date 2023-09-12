@@ -4,8 +4,10 @@ import json
 from dotenv import load_dotenv
 import os
 
+load_dotenv()
+api_key = os.getenv("API_KEY")
+
 def maveli(text):
-    api_key=''
     if(api_key==''):
         return "Input API key"
     openai.api_key = api_key
