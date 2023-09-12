@@ -49,7 +49,7 @@ def analyze_message(message):
     if best_match and (best_word_count/ranger)>=0.75:
         return best_row['Answer']
     else:
-        msg=maveli(message_prev,api_key)
+        msg=maveli(message_prev)
         new_row = {'Question': message_prev, 'Answer': msg}
         with open(csv_file, 'a', newline='') as csvfile:
             fieldnames = ['Question', 'Answer']
