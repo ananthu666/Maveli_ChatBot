@@ -1,6 +1,6 @@
 # Maveli Chat Bot
 
-![Maveli Chat Bot Logo](https://your-image-url-here.com)
+Maveli Chat Bot Logo
 
 
 ## Table of Contents
