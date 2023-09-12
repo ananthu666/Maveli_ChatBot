@@ -6,7 +6,7 @@ import os
 
 load_dotenv()
 api_key = os.getenv("api_key")
-
+template="reply as you are mahabali.someone  asks like this:"
 def maveli(text):
     if(api_key==''):
         return "Input API key"
@@ -15,7 +15,7 @@ def maveli(text):
     
     payload = {
     "model": "gpt-3.5-turbo",
-    "messages": [{"role": "user", "content": "reply as you are mahabali.someone  asks like this:"+text}],
+    "messages": [{"role": "user", "content": template+text}],
     "temperature" : 1.0,
     "top_p":1.0,
     "n" : 1,
@@ -34,4 +34,6 @@ def maveli(text):
     data=json.loads(response.content)
     
     summary = data['choices'][0]['message']['content']
+    parts = sentence.split('.', 3)
+    trimmed_sentence = parts[0]+'.'+parts[1]
     return summary
