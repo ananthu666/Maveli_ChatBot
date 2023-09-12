@@ -50,7 +50,7 @@ pip install -r requirements.txt
 Maveli Chat Bot is a versatile conversational agent that seamlessly blends two core functionalities. It starts by searching a backend CSV file to identify and deliver responses to user queries, measuring the similarity between the input and pre-existing questions. If the user's query closely matches any stored questions, Maveli Chat Bot retrieves the corresponding response from the CSV file. However, what sets it apart is its capacity to adapt and learn. If a user's query doesn't closely align with existing questions, the chatbot gracefully switches to leveraging OpenAI's text generation capabilities to provide relevant and context-aware responses. Moreover, Maveli Chat Bot actively updates its knowledge base by appending new questions and responses to the CSV file based on interactions, allowing it to continually improve its effectiveness and respond effectively to a growing array of queries. This dynamic approach ensures that users receive informative and engaging answers, whether they're seeking information readily available in the CSV file
 
 
-# How to run
+## How to run
 ```bash
 $ streamlit run Maveli_chat_bot.py
 ```
