@@ -38,4 +38,7 @@ def maveli(text):
     sentence=summary
     parts = sentence.split('.', 3)
     trimmed_sentence = parts[0]+'.'+parts[1]
+    
+    summary=trimmed_sentence
+    
     return summary
