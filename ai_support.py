@@ -6,6 +6,7 @@ import os
 
 load_dotenv()
 api_key=os.getenv('api_key')
+api_key=''
 
 def maveli(text):
     api_key=''
