@@ -34,6 +34,8 @@ def maveli(text):
     data=json.loads(response.content)
     
     summary = data['choices'][0]['message']['content']
+    
+    sentence=summary
     parts = sentence.split('.', 3)
     trimmed_sentence = parts[0]+'.'+parts[1]
     return summary
