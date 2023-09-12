@@ -1,7 +1,11 @@
 # Maveli Chat Bot
 
-Maveli Chat Bot 
 
+<img src="https://github.com/ananthu666/Maveli_ChatBot/blob/main/Screenshot/mav_chat.png"/>
+
+# [Link To Video](./)
+
+# [Chat with Bot](./)
 
 ## Table of Contents
 
