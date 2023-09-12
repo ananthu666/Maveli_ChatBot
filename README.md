@@ -1,6 +1,6 @@
 # Maveli Chat Bot
 
-Maveli Chat Bot Logo
+Maveli Chat Bot 
 
 
 ## Table of Contents
